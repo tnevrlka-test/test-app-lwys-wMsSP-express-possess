@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-qxsi
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-umpb-tenant/test-app-lwys/test-component-qxsi@sha256:9fd3b91da3ad6b4e4cce520ccf3301da82d5fa76e45bed0e786e2370d9dfff54
+        name: my-python
+        resources: {}
+status: {}
